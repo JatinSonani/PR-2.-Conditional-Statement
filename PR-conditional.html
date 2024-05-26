@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR .2 Conditional Statement</title>
+</head>
+
+<body>
+
+    <!-- Q.1 -  Write a JavaScript program to check numbers positive and negative. -->
+
+    <script>
+
+        let num = prompt("Enter Number")
+        if (num > 0)
+        {
+            document.write("Positive Number");
+        }
+        else if(num < 0){
+            document.write("Nagative Number");
+        }
+        else {
+            document.write("Enter Valid Number");
+        }
+
+    </script>
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Q-2 - Write a JavaScript program to check numbers even and odd. -->
+
+    <!-- <script>
+        
+        let num
+        num = prompt("Enter a Number");
+        if(num %2 == 0)
+        {
+            document.write("The number :" +num);            
+            document.write(" is an Even Number");            
+        }
+        else
+        {
+            document.write("The number :" +num);            
+            document.write(" is an Odd Number");
+        }
+        
+    </script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Q-3 -  Write a JavaScript program to check year is leap year or not leap year. -->
+
+    <!-- <script>
+        let year = prompt("Enter Year")
+        if (year % 4 == 0){
+            document.write("This Year is Leap Year..");
+        }
+        else{
+            document.write("This Year is Not Leap Year");
+        }
+    </script>    -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Q-4 - Write a JavaScript program to find which number is greater in 4 numbers using ladder if else. -->
+
+    <!-- <script>
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+        let num3 = parseFloat(prompt("Enter the third number:"));
+        let num4 = parseFloat(prompt("Enter the fourth number:"));
+        
+        if (num1 >= num2 && num1 >= num3 && num1 >= num4) {
+            document.write("num1 is largest..");
+        } else if (num2 >= num1 && num2 >= num3 && num2 >= num4) {
+            document.write("num2 is largest..");
+        } else if (num3 >= num1 && num3 >= num2 && num3 >= num4) {
+            document.write("num3 is largest..");
+        } else {
+            document.write("num4 is largest..");
+        }
+    </script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Q-5 Write a JavaScript program to decide that you eligible for voting. -->
+
+    <!-- <script>
+        let age = prompt("enter your age:");
+        
+        if (age >= 18) {
+            document.write("you are eligible for voting..");
+        }
+        else if (age < 18) {
+            document.write("you are not eligible for voting..");
+        }
+        else {
+            document.write("enter valid number..")
+        }
+    </script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Q-6  Write a Javascript program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following -->
+
+    <!-- <script>
+
+        let Physics = (prompt("Enter your marks in Physics:"));
+        let Chemistry = (prompt("Enter your marks in Chemistry:"));
+        let Biology = (prompt("Enter your marks in Biology:"));
+        let Mathematics = (prompt("Enter your marks in Mathematics:"));
+        let Computer = (prompt("Enter your marks in Computer:"));
+
+        if (Physics < 0 || Physics > 100 ||
+            Chemistry < 0 || Chemistry > 100 ||
+            Biology < 0 || Biology > 100 ||
+            Mathematics < 0 || Mathematics > 100 ||
+            Computer < 0 || Computer > 100
+        ) {
+            document.write("Enter valid marks between 0 and 100 for all Subjects.");
+        } else {
+            let m = (Physics + Chemistry + Biology + Mathematics + Computer) / 5;
+            if (m >= 90) {
+                document.write("You achieve 'A' Grade");
+            } else if (m >= 80) {
+                document.write("You achieve 'B' Grade");
+            } else if (m >= 70) {
+                document.write("You achieve 'C' Grade");
+            } else if (m >= 60) {
+                document.write("You achieve 'D' Grade");
+            } else if (m >= 50) {
+                document.write("You achieve 'E' Grade");
+            } else if (m >= 40) {
+                document.write("You achieve 'F' Grade");
+            } else {
+                document.write("You are fail..");
+            }
+        }
+
+    </script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Q-7  Write a JavaScript program to find month name from month number using switch case. -->
+
+    <!-- <script>
+
+        let monthNumber = parseInt(prompt("Enter a month number (1-12):"));
+
+        let monthName;
+
+        switch (monthNumber) {
+            case 1:
+                monthName = "January";
+                break;
+            case 2:
+                monthName = "February";
+                break;
+            case 3:
+                monthName = "March";
+                break;
+            case 4:
+                monthName = "April";
+                break;
+            case 5:
+                monthName = "May";
+                break;
+            case 6:
+                monthName = "June";
+                break;
+            case 7:
+                monthName = "July";
+                break;
+            case 8:
+                monthName = "August";
+                break;
+            case 9:
+                monthName = "September";
+                break;
+            case 10:
+                monthName = "October";
+                break;
+            case 11:
+                monthName = "November";
+                break;
+            case 12:
+                monthName = "December";
+                break;
+            default:
+                monthName = "Invalid month number. Please enter a number between 1 and 12.";
+        }
+
+        document.write(monthName);
+
+    </script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- 8. Write a JavaScript program to find week day from first letter of it using if else if. -->
+
+    <!-- <script>
+        {
+            let weekday = prompt("Enter the first letter of the weekday: ");
+
+            if (weekday === 'mo') {
+                document.write('Monday');
+            } else if (weekday === 'tu') {
+                document.write('Tuesday');
+            } else if (weekday === 'we') {
+                document.write('Wednesday');
+            } else if (weekday === 'th') {
+                document.write('Thursday');
+            } else if (weekday === 'fr') {
+                document.write('Friday');
+            } else if (weekday === 'sa') {
+                document.write('Saturday');
+            } else if (weekday === 'su') {
+                document.write('Sunday'); 
+            } else {
+                document.write('Invalid input');
+            }
+        }
+    </script> -->
+
+     <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Q-9 Write a JavaScript program to find max of 4 number using nested if. -->
+
+    <!-- <script>
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+        let num3 = parseFloat(prompt("Enter the third number:"));
+        let num4 = parseFloat(prompt("Enter the fourth number:"));
+
+        if (num1 >= num2) {
+            if (num1 >= num3) {
+                if (num1 >= 4) {
+                    alert("num1 is maximum");
+                }
+                else {
+                    alert("num4 is maximum");
+                }
+            }
+            else if (num3 > num4) {
+                alert("num3 is maximum");
+            }
+            else {
+                alert("num4 is maximum");
+            }
+        } else {
+            if (num2 >= num3) {
+                if (num2 >= num4) {
+                    alert("num2 is maximum");
+                } else {
+                    alert("num4 is maximum");
+                }
+            }
+            else if (num3 >= num4) {
+                alert("num3 is maximum");
+            }
+            else {
+                alert("num4 is maximum");
+            }
+        }
+    </script> -->
+
+     <!-- ------------------------------------------------------------------------------------------------------ -->
+
+     <!-- 10. Write a JavaScript program to create basic calculator using switch case. -->
+
+    <!-- <script>
+            let result;
+
+            let number1 = parseFloat(prompt("Enter first number: "));
+            let number2 = parseFloat(prompt("Enter second number: "));
+            
+            let operator = prompt("Enter operator ( either +, -, * or / ): ");
+
+            switch(operator) {
+                case '+':
+                    result = number1 + number2;
+                    document.write(${number1} + ${number2} = ${result});
+                    break;
+
+                case '-':
+                    result = number1 - number2;
+                    document.write(${number1} - ${number2} = ${result});
+                    break;
+
+                case '*':
+                    result = number1 * number2;
+                    document.write(${number1} * ${number2} = ${result});
+                    break;
+
+                case '/':
+                    result = number1 / number2;
+                    document.write(${number1} / ${number2} = ${result});
+                    break;
+
+                default:
+                document.write('Invalid operator');
+                    break;
+            }
+    </script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- 11. Write a JavaScript program to create basic calculator using ledder if else. -->
+
+    <!-- <script>
+
+            const number1 = parseFloat(prompt('Enter first number: '));
+            const number2 = parseFloat(prompt('Enter second number: '));
+            
+            const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+            let result;
+
+            if (operator == '+') 
+            {
+                result = number1 + number2;
+            }
+            else if (operator == '-') 
+            {
+                result = number1 - number2;
+            }
+            else if (operator == '*') 
+            {
+                result = number1 * number2;
+            }
+            else 
+            {
+                result = number1 / number2;
+            }
+
+            document.write(${number1} ${operator} ${number2} = ${result});
+
+    </script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Q-12.Write a JavaScript   program to input angles of a triangle and check whether triangle is valid or not. -->
+
+     <!-- <script>
+
+        function Triangle(angle1, angle2, angle3) 
+        {
+            return angle1 + angle2 + angle3 === 180;
+        }
+        
+        {
+
+            let angle1 = parseInt(prompt("Enter first angle of the triangle:"));
+            let angle2 = parseInt(prompt("Enter second angle of the triangle:"));
+            let angle3 = parseInt(prompt("Enter third angle of the triangle:"));
+
+            if (Triangle(angle1, angle2, angle3)) 
+            {
+                document.write("The triangle is valid.");
+            } else {
+                document.write("The triangle is not valid.");
+            }
+        }
+
+    </script> -->
+
+
+
+<!-- =============================================== END ============================================================= -->
+    
+
+    
+
+</body>
+
+</html>
